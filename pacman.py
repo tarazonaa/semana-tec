@@ -141,8 +141,8 @@ def move():
                 vector(0, -5),
             ]
             plan = choice(options)
-            course.x = plan.x
-            course.y = plan.y
+            course.x = plan.x *2
+            course.y = plan.y *2
 
         up()
         goto(point.x + 10, point.y + 10)
