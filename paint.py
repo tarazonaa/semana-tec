@@ -70,7 +70,7 @@ def store(key, value):
 
 
 state = {'start': None, 'shape': line}
-setup(420, 420, 370, 0)
+setup(540, 540, 400, 0)
 onscreenclick(tap)
 listen()
 onkey(undo, 'u')
