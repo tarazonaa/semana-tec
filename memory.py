@@ -45,6 +45,9 @@ def xy(count):
 
 def tap(x, y):
     """Update mark and hidden tiles based on tap."""
+    global tap_count  
+    tap_count += 1  
+    print("Taps:", tap_count)  
     spot = index(x, y)
     mark = state['mark']
 
