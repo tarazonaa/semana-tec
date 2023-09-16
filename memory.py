@@ -50,6 +50,9 @@ def xy(count):
 
 def tap(x, y):
     """Update mark and hidden tiles based on tap."""
+    global tap_count  
+    tap_count += 1  
+    print("Taps:", tap_count)  
     spot = index(x, y)
     mark = state['mark']
 
@@ -80,7 +83,7 @@ def draw():
         up()
         goto(x + 2, y)
         color('black')
-        write(tiles[mark], font=('Arial', 30, 'normal'))
+        write(tiles[mark], font=('Helvetica', 25, 'normal'))
 
     update()
     ontimer(draw, 100)
