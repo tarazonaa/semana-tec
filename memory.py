@@ -32,6 +32,11 @@ def square(x, y):
         left(90)
     end_fill()
 
+def allSquaresAreOn():
+    for i in range(64):
+        if hide[i]:
+            return False
+    return True
 
 def index(x, y):
     """Convert (x, y) coordinates to tiles index."""
