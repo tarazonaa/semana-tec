@@ -48,8 +48,8 @@ def move():
 
     if head == food:
         print('Snake:', len(snake))
-        food.x = randrange(-15, 15) * 10
-        food.y = randrange(-15, 15) * 10
+        food.x = randrange(-1, 1) * 10
+        food.y = randrange(-1, 1) * 10
     else:
         snake.pop(0)
 
@@ -67,9 +67,9 @@ setup(420, 420, 370, 0)
 hideturtle()
 tracer(False)
 listen()
-onkey(lambda: change(10, 0), 'Right')
-onkey(lambda: change(-10, 0), 'Left')
-onkey(lambda: change(0, 10), 'Up')
-onkey(lambda: change(0, -10), 'Down')
+onkey(lambda: change(15.7, 0), 'Right')
+onkey(lambda: change(-15.7, 0), 'Left')
+onkey(lambda: change(0, 15.7), 'Up')
+onkey(lambda: change(0, -15.7), 'Down')
 move()
 done()
