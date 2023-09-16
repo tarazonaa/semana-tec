@@ -74,6 +74,13 @@ def move():
         if not inside(target):
             return
 
+    """ Make ball go back if it leaves"""
+    if not inside(ball):
+        ball.x = -199
+        ball.y = -199
+        speed.x = 0
+        speed.y = 0
+
     ontimer(move, 50)
 
 
